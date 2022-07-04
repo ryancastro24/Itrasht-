@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I trasht</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+    <script src="openprofile.js" defer></script>
+    <script src="request-button-modal.js"defer></script>
+    <script src="report-button-modal.js"defer></script>
+</head>
+<body>
+
+
+
+    <div id="report-modal" class="report-btn-modal">  
+        <div class="report-btn-modal-content">
+            <header>
+                <h1>Report a Problem</h1>
+                <img onclick="closeReportModal()" src="./img/iconmonstr-x-mark-lined 1.png" alt="">
+            </header><!--end of header-->
+        <form id="report-form" action="">
+            <div class="category">  
+                <label for="">Select Category</label>
+                <select name="" id="">
+                    <option value="">Wrong sanction</option>
+                    <option value="">Abusive personels</option>
+                    <option value="">System Points not converting</option>
+                    <option value="">Garbage not collected</option>
+                    <option value="">Others</option>
+                </select> 
+            </div><!--end of category-->
+
+            <div class="concern-field">
+                <label for="">Input Concern</label>
+                <textarea placeholder="Enter text..." name="" id="" cols="30" rows="10" aria-expanded="false"></textarea>
+            </div><!--end of concern field-->
+            
+            <button id="report-modal-btn">Report Problem</button>
+        </form>    
+        </div><!--end of report btn modal content-->
+    </div><!--end of report btn modal-->
+
+
+
+
+
+
+
+
+
+    
+    <div id="request-modal" class="request-btn-modal">
+        <div class="request-btn-modal-content">
+            <div class="header">
+                <h1>Special Request</h1>
+                <img onclick="closeRequestModal()" src="./img/iconmonstr-x-mark-lined 1.png" alt="">
+          
+            </div><!--end of header-->
+
+            <h2>Garbage Type</h2>
+            <hr>
+        <form action="">
+            <div class="checkbox-container">
+
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+                <div class="checkbox-content">
+                    <input type="checkbox">
+                    <label for="">Plastic Bottles</label>
+                </div><!--end of check box content-->
+
+
+            </div><!--end of checkbox container-->
+
+            <h2 style="margin-top:40px;">User Information</h2>
+            <hr>
+            <div class="special-request-inputfield">
+
+                <div class="input-container">
+                    <label for="">Fullname</label>
+                    <input type="text" placeholder="Enter Fullname" name="fullname">
+                </div><!--end of input-container-->
+
+
+                <div class="input-container">
+                    <label for="">Location</label>
+                    <input type="text" placeholder="Enter Location" name="location">
+                </div><!--end of input-container-->
+
+
+                <div class="input-container">
+                    <label for="">Scheduled Date</label>
+                    <input type="date" placeholder="MM/DD/YYYY" name="scheduled-date">
+                </div><!--end of input-container-->
+
+
+                <div class="input-container">
+                    <label for="">Available Services</label>
+                    <select name="" id="">
+                        <option value="">LGU personels</option>
+                        <option value="">Partner 1</option>
+                        <option value="">Partner 2</option>
+                        <option value="">Partner 3</option>
+                    </select>
+                </div><!--end of input-container-->
+
+                <button id="request-modal-btn">Request <img src="./img/iconmonstr-arrow-31 1.png" alt=""></button>
+            </form>
+
+            </div><!--end of special-request-inputfield-->
+        </div> <!--end of request btn model content-->
+    </div><!--end of request btn modal-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="profileDrpdown" class="profile-dropdown">
+        <h3>Profile</h3>
+        <div class="upper-profile">
+            <div class="profile-picture">
+
+            </div><!--end of profile picture-->
+
+            <div class="profile-details">
+                <h1>Jhon Smith</h1>
+                <p><b>ID: </b>#12345</p>
+                <p><b>Username:</b>jhonsmith12</p>
+            </div><!--end of profile details-->
+        </div><!--end of upper profile-->
+        <div class="lower-profile">
+            <p><b>Address:</b> P3 Villa Paraiso Ampayon Butuan City</p>
+            <p><b>Phone Number:</b> 09312312223</p>
+            <p><b>Email:</b> ryanjoel@gmail.com</p>
+
+            <button>manage account</button>
+
+        </div><!--end of lower profile-->
+        <button id="close-profile" onclick="closeProfile()"><img src="./img/iconmonstr-x-mark-lined 1.png" alt=""> close</button>
+    </div><!--end of profile dropdown-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="sidenav" class="sidenav">
+        <div class="sidenav-content">
+            <div class="top-navigation">
+                <img onclick="closeSidenav()" src="./img/mobile sidenav img/iconmonstr-arrow-left-lined 1.png" alt="">
+            <div>
+                <img src="./img/mobile sidenav img/iconmonstr-magnifier-2 (1) 1.png" alt="">
+                <div onclick="openProfile()" class="profile">
+                    <img src="./img/mobile sidenav img/iconmonstr-user-5 1.png" alt="">
+                </div><!--end of profile-->
+            </div>
+            
+            </div><!--end of top navigation-->
+            <div class="sidenav-inner-content">
+                <h1>I trasht</h1>
+                <ul> 
+                    <li onclick="openReportModal()"><img src="./img/mobile sidenav img/Vector (2).png" alt=""> Report</li>
+                    <li onclick="openRequestModal()"><img src="./img/mobile sidenav img/iconmonstr-trash-can-28 1.png" alt=""> Special Request</li>
+                    <li><img src="./img/mobile sidenav img/iconmonstr-bell-2 1.png" alt=""> Notification</li>
+                    <hr>
+                    <a href="calendar.html"><li><img src="./img/mobile sidenav img/iconmonstr-calendar-4-240 1.png" alt=""> Calendar</li></a>
+                    <a href="dashboard.html"><li><img src="./img/mobile sidenav img/iconmonstr-chart-4-240 1.png" alt=""> Dashboard</li></a>
+                    <a href="partners.html"><li><img src="./img/mobile sidenav img/iconmonstr-friend-3-240 1.png" alt=""> Partners</li></a>
+                    <a href="contact.html"><li><img src="./img/mobile sidenav img/iconmonstr-phone-1-240 (1) 1.png" alt=""> Contact</li></a>
+                    <hr>
+                    <a href=""><li><img src="./img/mobile sidenav img/iconmonstr-gear-1-240 1.png" alt=""> Settings</li></a>
+                    <a href="logout.html"><li><img src="./img/mobile sidenav img/iconmonstr-log-out-7-240 1.png" alt=""> Logout</li></a>
+                </ul>
+            </div><!--end of sidenav inner content-->
+       </div><!--end of sidenav content-->
+    </div><!--end of sidenav -->
+
+    <div id="modal" class="modal">
+        <div onclick="closeModal()" class="backButton">
+            <img src="./img/iconmonstr-arrow-left-circle-lined-240.png" alt="">
+
+        </div><!--end of back button-->
+        <div class="global-chat-mobile-container">
+            <h2>FAQs and feedback</h2>
+
+
+
+            <div class="mobile-feedback-chat-container">
+                <div class="mobile-feedback-chat-content"></div><!--mobile feedback chat content-->
+                <div class="mobile-feedback-chat-content"></div><!--mobile feedback chat content-->
+                <div class="mobile-feedback-chat-content"></div><!--mobile feedback chat content-->
+                <div class="mobile-feedback-chat-content"></div><!--mobile feedback chat content-->
+            </div><!--end of mobile feedback chat container-->
+
+            
+
+           
+        </div><!--end of global chat mobile container-->
+    </div><!--end of modal-->
+   
+
+    <nav>
+
+        <div class="upper-nav">
+            <div class="logo">
+                <h1>I trasht</h1>
+            </div><!--end of logo-->
+            <ul>
+                <a href="calendar.html"><li><img src="./img/iconmonstr-calendar-4-240.png" alt=""> Calendar</li></a>
+                <a href="dashboard.html"><li class="active"> <img src="./img/iconmonstr-chart-4-240.png" alt=""> Dashboard</li></a>
+                <a href="partners.html"><li><img src="./img/iconmonstr-friend-3-240.png" alt=""> Partners</li></a>
+                <a href="contact.html"><li><img src="./img/iconmonstr-phone-1-240 (1).png" alt=""> Contact</li></a>
+            </ul>
+        </div><!--end of upper nav-->
+
+        <div class="lower-nav">
+            <ul>
+                <li><img src="./img/iconmonstr-gear-1-240.png" alt=""> Settings</li>
+                <a href="logout.html"><li><img src="./img/iconmonstr-log-out-7-240.png" alt=""> Logout</li></a>
+            </ul>
+
+        </div><!--end of lower nav-->
+        </nav><!--end of nav-->
+
+    <main>
+
+
+        <div class="prototype"></div><!--end of prototype-->
+        
+
+
+        <section class="content">
+            <div class="content-navigation">
+                <div class="search-field">
+                    <img src="./img/iconmonstr-magnifier-2-240.png" alt="">
+                    <label for="">search</label>
+                    <input type="text" name="search">
+                    
+                </div><!--end  of search field -->
+
+            <div class="user-input-field">
+                <button onclick="openReportModal()" id="report-btn">Report</button>
+                <button onclick="openRequestModal()" id="special-request-btn">Special request</button>
+                <button onclick="openProfile()" id="profile-btn"><img src="./img/iconmonstr-user-1-240.png" alt=""></button>
+                <div class="notification-button">
+                    <button><img src="./img/iconmonstr-bell-2-240.png" alt=""></button>
+                    <div id="notification-content">
+                        <h4>5</h4>
+                    </div><!--end of notification content-->
+                </div><!--end of  notification button-->
+                <button onclick="openSidenav()" id="menu-btn"><img src="./img/iconmonstr-menu-1-240 (1).png" alt=""></button>
+            </div><!--end of user input field-->
+            </div><!--end of content navigation-->
+
+            <div class="main-content-container">
+                <div class="left-main-content">
+                    <div class="announcement-container">
+
+                        <header>
+                        <img src="./img/iconmonstr-megaphone-3-240.png" alt="">
+                        <h1>Announcement</h1>
+                        </header><!--end of header-->  
+
+
+                        <div class="announcement-container-content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum inventore ad quaerat saepe aspernatur temporibus deserunt adipisci quibusdam corrupti numquam.</p>
+                        </div><!--end of announcemnet container content-->
+
+                    </div><!--end of announcement container-->
+
+                    <div class="departments-container">
+                        <div class="department-card">
+                            <img src="./img/iconmonstr-recycling-1-240 (1).png" alt="">
+                            <a href="recycle_blog.html"><h2>Proper Waste Management</h2></a>
+                        </div><!--end of department card-->
+                    <div class="department-card">
+                            <img src="./img/iconmonstr-building-35-240 (1).png" alt="">
+                            <a href=""><h2>Local Government Unit</h2></a>
+                        </div><!--end of department card-->
+                   <div class="department-card">   
+                            <img src="./img/iconmonstr-location-15-240.png" alt="">
+                            <a href=""><h2>Near MRF Locations</h2></a>
+                        </div><!--end of department card-->  
+                    </div><!--end of departments container-->
+
+
+                    <div class="sanctions-container">
+                            <div class="sanctions-head-container">
+                               <button id="sanctions">Sanctions</button>
+                               <button id="progress">Progress</button>
+                            </div><!--end of sacntions head container-->
+
+                            <div class="sanctions-content">
+                                <table>
+                                    <tr>
+                                        <td>Sanction1</td>
+                                        <td>April 23, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sanction2</td>
+                                        <td>April 27, 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sanction3</td>
+                                        <td>May 2, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sanction4</td>
+                                        <td>May 10, 2022</td>
+                                    </tr>
+                                </table><!--end of table-->
+                            </div><!--end of sanctions content-->
+                    </div><!--end of sanctions-->
+                    
+                    <div  onclick="openModal()" class="global-chat-mobile">
+                        <button id="global-chat-mobile-content"><img src="./img/iconmonstr-speech-bubble-27-240 (1).png" alt=""></button>
+                    </div><!--end of global chat mobile-->
+                </div><!--end of left main content-->
+
+                <div class="right-main-content">
+                    <div class="global-chat">
+                        <header>
+                            <h2>FAQs and Feedback</h2>
+                        </header><!--end of global chat header-->
+                        <div class="global-chat-content">
+                            <div class="global-chat-content-card">
+
+                            </div><!--end of global chat content card-->
+                            
+                            <div class="global-chat-content-card">
+
+                            </div><!--end of global chat content card-->
+
+                            <div class="global-chat-content-card">
+
+                            </div><!--end of global chat content card-->
+                        </div><!--end of global chat content-->
+
+                        <div class="global-chat-message-field">
+                            <div class="global-chat-message-input">
+                                <label for="message-input">Input text</label>
+                                <input type="text" name="message-input">
+                                <button><img src="./img/iconmonstr-paper-plane-1-240.png" alt=""></button>
+                            </div><!--end of global chat message input-->
+                        </div><!-- end of global chat message field-->
+                    </div><!--end of global chat-->
+                </div><!--end of rigth main content-->
+            </div><!--end of main content container-->
+        </section><!--end of contents-->
+
+    </main><!--end of main-->
+
+</body>
+</html>

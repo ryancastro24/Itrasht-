@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itrasht</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" defer></script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <main>
+    
+        <div class="content">
+
+        <h1>Sign Up</h1>
+        <p>already have an account? <a href="index.html">sign in</a></p>
+
+
+            <form id="regForm" action="dashboard.html">
+                
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+                <div class="tab-inner-content">
+                <div class="input-field">
+                <label for="firstname">Firstname</label>
+                 <input placeholder="Enter Firstname" oninput="this.className = ''" name="fname">
+                </div><!--end of input field-->
+
+                <div class="input-field">
+                 <label for="middlename">Middlename</label>
+                  <input placeholder="Enter Middlename" oninput="this.className = ''" name="mname">
+                </div><!--end of input field-->
+
+
+                <div class="input-field">
+                    <label for="lastname">Lastname</label>
+                     <input placeholder="Enter Middlename" oninput="this.className = ''" name="lname">
+                   </div><!--end of input field-->
+
+                </div><!--end of tab inner content-->
+                </div><!--end of tab-->
+
+
+                <div class="tab">
+                    <div class="tab-inner-content">
+                    <div class="input-field">
+                    <label for="phonenumber">Phone Number</label>
+                     <input type="number" placeholder="+639XXXXXXXX" oninput="this.className = ''" name="pnum">
+                    </div><!--end of input field-->
+    
+                    <div class="input-field">
+                     <label for="address">Address</label>
+                      <input placeholder="Enter Address" oninput="this.className = ''" name="address">
+                    </div><!--end of input field-->
+    
+    
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                         <input placeholder="Enter Email" oninput="this.className = ''" name="email">
+                       </div><!--end of input field-->
+    
+                    </div><!--end of tab inner content-->
+                    </div><!--end of tab-->
+                
+                    <div class="tab">
+                        <div class="tab-inner-content">
+                        <div class="input-field">
+                        <label for="username">Username</label>
+                         <input placeholder="Enter username" oninput="this.className = ''" name="username">
+                        </div><!--end of input field-->
+        
+                        <div class="input-field">
+                         <label for="password">Password</label>
+                          <input type="password" placeholder="Enter Password" oninput="this.className = ''" name="password">
+                          <p>password must be atleast 8 characters</p>
+                        </div><!--end of input field-->
+        
+        
+                        <div class="input-field">
+                            <label for="confirm-pass">Confirm Password</label>
+                             <input type="password" placeholder="Confirm Password" oninput="this.className = ''" name="confirmpass">
+                           </div><!--end of input field-->
+        
+                        </div><!--end of tab inner content-->
+                        </div><!--end of tab-->
+                <div class="btns">
+                  
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">next</button>
+                  </div>
+                
+                <!-- Circles which indicates the steps of the form: -->
+                <div class="circles">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                </div>
+              </form>
+        </div><!--end of cotent-->
+
+        
+    </main><!--end of main -->
+    
+</body>
+</html>

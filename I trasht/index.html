@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <div  id="modal"   class="modal">
+        <div class="return-arrow">
+            <img onclick="closeModal()" src="./img/landpage-modal arrow.png" alt="">
+        </div><!--end of return arrow-->
+        <div class="modal-content">
+           
+            <form action="dashboard.html" >
+                <div class="username">
+                    <img src="./img/user-landingpage.png" alt="">
+                    <input type="text" placeholder="username">
+                </div><!--end of username-->
+
+                <div class="password">
+                    <img src="./img/password-landingpage.png" alt="">
+                    <input type="password" placeholder="password">
+                </div><!--end of password-->
+
+                <span>forgot password? <a href="">recover</a></span>
+                <button>LOGIN</button>
+            </form><!--end of form-->
+        </div><!--end of modal content-->
+    </div><!--end of modal-->
+
+
+
+
+
+    <main>
+        <div class="right-section">
+
+            <img id="trash-can" src="./img/iconmonstr-trash-can-thin-240 (1).png" alt="">
+            <img id="recycle" src="./img/iconmonstr-recycling-2-240.png" alt="">
+            <img id="coins" src="./img/iconmonstr-coin-thin-240.png" alt="">
+
+
+            <div class="logo">
+                <h1>I trasht</h1>
+                <button onclick="openModal()" id="login-navigation-btn">login</button>
+            </div><!--end of logo-->
+            <div class="caption-container">
+                <h1>welcome <p>!</p></h1>
+                <h2>Join us and make a change. Earn money from your garbage</h2>
+               <a href="signup.html"> <button>sign up <img src="./img/signup-arrow.png" alt=""></button></a>
+            </div><!--end of caption container-->
+        
+        </div><!--end of right section-->
+        <div class="left-section">
+            <form action="dashboard.html" >
+                <div class="username">
+                    <img src="./img/user-landingpage.png" alt="">
+                    <input type="text" placeholder="username">
+                </div><!--end of username-->
+
+                <div class="password">
+                    <img src="./img/password-landingpage.png" alt="">
+                    <input type="password" placeholder="password">
+                </div><!--end of password-->
+
+                <span>forgot password? <a href="">recover</a></span>
+               <button>LOGIN</button>
+            </form><!--end of form-->
+        </div><!--end of left section-->
+    </main>
+    
+    
+</body>
+</html>
